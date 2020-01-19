@@ -1,4 +1,3 @@
-
 let b=new Array();
 let i=new Array();
 let n=new Array();
@@ -50,13 +49,6 @@ mi_funcion_principal = () => {
 }
 mi_funcion_principal()
 let tabla1 = new Array;
-GenerarNumeros =()=> { 
-    for (let i = 0; i < 25; i++) {
-        if (i == 12)
-            continue;
-        generarCasilla(i);
-    }
-}
 const exportar = () =>{
     
     mi_funcion_principal();

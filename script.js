@@ -8,35 +8,12 @@ const config ={
     database: 'Bingo'
 };
 const pool = new Pool (config)
-const datUsr = async() =>{
-    try{
-        const datUsr=await pool.query('select * from cartillas2(info) WHERE ');
-        console.log(datUsr.rows);
-        pool.end();
-    }catch(error){
-        console.log(error)
-    }
-}
 const insertUsr=async() =>{
     const text= "INSERT INTO cartillas2(info) VALUES ($1)"
     const VALUES=[numeros.paraInsertart()]
 
     const res = await pool.query(text, VALUES);
     
-    
-}
-const deleteUsr = async() =>{
-
-    const text = 'DELETE FROM numLanzados';
-    
-    const res = await pool.query(text);
-    
-}
-const deleteCartillas = async() =>{
-
-    const text = 'DELETE FROM cartillas2';
-    
-    const res = await pool.query(text);
     
 }
 

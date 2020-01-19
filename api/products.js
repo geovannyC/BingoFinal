@@ -4,12 +4,6 @@ const rec = require('../js/bingo')
 const lanzar = require('../js/lanzar');
 const insertar = require('../script')
 
-router.get('/index', (req, res, next) =>{
-    
-    res.status(200)
-
-    
-});
 router.get('/', (req, res, next) =>{
     
     res.status(200).json(JSON.stringify(rec.exportar()))
