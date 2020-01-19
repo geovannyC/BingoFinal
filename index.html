@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Bingo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="scripts/bingo.js"></script>
+    </head>
+    <body onload="iniciar()">
+        <div id="contenido">
+            <table id="cartilla-card">
+                <tr>
+                    <th class="header">B</th>
+                    <th class="header">I</th>
+                    <th class="header">N</th>
+                    <th class="header">G</th>
+                    <th class="header">O</th>
+                </tr>
+                <div >
+                <tr>
+                    <td><input id="sq0" class="cubo" type="button" ></td>
+                    <td><input id="sq5" class="cubo" type="button"  ></td>
+                    <td><input id="sq10" class="cubo" type="button" ></td>
+                    <td><input id="sq15" class="cubo" type="button" ></td>
+                    <td><input id="sq20" class="cubo" type="button" ></td>
+                </tr>
+                <tr>
+                    <td><input id="sq1" class="cubo" type="button" ></td>
+                    <td><input id="sq6" class="cubo" type="button" ></td>
+                    <td><input id="sq11" class="cubo" type="button" ></td>
+                    <td><input id="sq16" class="cubo" type="button" ></td>
+                    <td><input id="sq21" class="cubo" type="button" ></td>
+                </tr>
+                <tr>
+                    <td><input id="sq2" class="cubo" type="button" ></td>
+                    <td><input id="sq7" class="cubo" type="button" ></td>
+                    <td><input id="sq12" class="cubo" type="button" value="FREE" ></td>
+                    <td><input id="sq17" class="cubo" type="button" ></td>
+                    <td><input id="sq22" class="cubo" type="button" ></td>
+                </tr>
+                <tr>
+                    <td><input id="sq3" class="cubo" type="button" ></td>
+                    <td><input id="sq8" class="cubo" type="button" ></td>
+                    <td><input id="sq13" class="cubo" type="button" ></td>
+                    <td><input id="sq18" class="cubo" type="button" ></td>
+                    <td><input id="sq23" class="cubo" type="button" ></td>
+                </tr>
+                <tr>
+                    <td><input id="sq4" class="cubo" type="button" ></td>
+                    <td><input id="sq9" class="cubo" type="button" ></td>
+                    <td><input id="sq14" class="cubo" type="button" ></td>
+                    <td><input id="sq19" class="cubo" type="button" ></td>
+                    <td><input id="sq24" class="cubo" type="button" ></td>
+                </tr>
+            </div>
+            <div id="contenido1">
+                
+            </div>
+            </table>
+        </div>
+        <div id="botones">
+            <div id="acciones">
+                <p>
+                    <input type="button" class="button" name="lanzar" id="bCall" value="lanzar" onclick="lanzar()">
+                </p>
+            </div>
+            <p>Bola: <p id="lanzar"></p></p>
+            <p>Bolas Llamadas: </p>
+            <p id="numerosLlamados"></p>
+        </div>
+      </body>
+</html>
